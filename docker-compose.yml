@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  php: #first container
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports:
+      - 85:80 #browse localhost:85 on browser
+    volumes:
+      - ./src:/var/www/html/ #set up source file volume inside src folder
+  db: #second container
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+#setup a volume on your local system, all DB tables gets stored inside "mysqldata".
+volumes:
+  mysql-data:
