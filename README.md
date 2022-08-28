@@ -15,3 +15,6 @@
 * containers setup:
 * localhost:85/db_setup -> php app
 * localhost:8080 -> adminer mysql
+
+* to install phpunit, you'll need to use composer require --dev phpunit/phpunit and setup a new phpunit.xml config file so it can find the tests
+* run tests: vendor/bin/phpunit
