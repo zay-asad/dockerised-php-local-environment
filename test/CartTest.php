@@ -4,11 +4,17 @@ use App\Cart;
 
 class CartTest extends \PHPUnit\Framework\TestCase
 {
+    protected $cart;
+
+    protected function setUp(): void
+    {
+        $this->cart = new Cart();
+    }
+
     public function testCorrectNetPriceIsReturned()
     {
-        $cart = new Cart();
-        $cart->price = 10;
-        $netPrice = $cart->getNetPrice();
+        $this->cart->price = 10;
+        $netPrice = $this->cart->getNetPrice();
 
         $this->assertEquals(12, $netPrice);
     }
