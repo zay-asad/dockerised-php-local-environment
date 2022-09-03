@@ -18,4 +18,11 @@ class CartTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals(12, $netPrice);
     }
+
+    public function testTypeErrorToBeThrownWhenAddingNonInt()
+    {
+        $this->expectException(TypeError::class);
+
+        $this->cart->addToPrice('fifteen');
+    }
 }
