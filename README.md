@@ -18,3 +18,4 @@
 
 * to install phpunit, you'll need to use composer require --dev phpunit/phpunit and setup a new phpunit.xml config file so it can find the tests
 * run tests: vendor/bin/phpunit
+* run and filter ONLY one test: ./vendor/bin/phpunit --filter DemoAssertionsTest
