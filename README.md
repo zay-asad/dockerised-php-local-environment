@@ -16,6 +16,7 @@
 * localhost:85/db_setup -> php app
 * localhost:8080 -> adminer mysql
 
-* to install phpunit, you'll need to use composer require --dev phpunit/phpunit and setup a new phpunit.xml config file so it can find the tests
-* run tests: vendor/bin/phpunit
-* run and filter ONLY one test: ./vendor/bin/phpunit --filter DemoAssertionsTest
+* to install phpunit, you'll need to use ```composer require --dev phpunit/phpunit``` and setup a new ```phpunit.xml``` config file so it can find the tests
+* run tests: ```vendor/bin/phpunit```
+* run and filter ONLY one test: ```./vendor/bin/phpunit --filter DemoAssertionsTest```
+* everytime you change anything in the composer.json e.g. adding autoload you need to run this command to update the changes:```composer dump-autoload```
