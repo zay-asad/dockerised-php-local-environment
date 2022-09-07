@@ -1,3 +1,8 @@
+<?php
+
+include 'ListEntity.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +25,22 @@
     echo "$title";
 
     echo "<br>";
+
+    //creating new object
+    $list = new \App\ListEntity();
+
+    //setting fields
+    $list->setListId(20);
+    $list->setListName('testList');
+    $list->setPublishDate('02-02-2022');
+
+    echo $list->getListId();
+    echo "<br>";
+    echo $list->getListName();
+    echo "<br>";
+    echo $list->getPublishDate();
+    echo "<br>";
     ?>
 
-
-
 </div>
-
-
-
-
 </html>
