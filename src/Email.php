@@ -2,7 +2,7 @@
 
 class Email
 {
-    private $email;
+    private string $email;
 
     private function __construct(string $email)
     {
