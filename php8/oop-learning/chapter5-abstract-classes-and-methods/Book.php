@@ -17,4 +17,8 @@ abstract class Book
         return $this->title;
 
     }
+
+    //creating an abstract method
+    //anything that extends this abstract "Book" class will need to implement this method too
+    abstract public function write(): string;
 }
