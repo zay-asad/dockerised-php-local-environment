@@ -6,7 +6,7 @@
          cacheResult="false"
 >
     <testsuites>
-        <testsuite name="dockerised-php-local-env tests">
+        <testsuite name="test">
             <directory>test</directory>
         </testsuite>
     </testsuites>

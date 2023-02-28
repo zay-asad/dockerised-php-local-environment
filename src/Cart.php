@@ -9,12 +9,13 @@ class Cart
 
     public function getNetPrice(): float
     {
+        //multiply price with tax
         return $this->price * self::$tax;
     }
 
-    public function addToPrice(int $amount) //type-hinted amount to "int"
+    public function addToPrice(int $amount)
     {
-        $this->price += $amount; //add amount to price
+        //take an amount and add it to the running price
+        $this->price += $amount;
     }
-
 }

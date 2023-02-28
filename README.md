@@ -23,3 +23,6 @@
 * run tests: ```vendor/bin/phpunit```
 * run and filter ONLY one test: ```./vendor/bin/phpunit --filter DemoAssertionsTest```
 * everytime you change anything in the composer.json e.g. adding autoload you need to run this command to update the changes:```composer dump-autoload```
+* I have also installed symfony/var-dumper for testing errors/exceptions in PHPunit
+
+### Todo-create another dockerfile for php 8.1 & php 8.2
